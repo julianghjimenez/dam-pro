@@ -4,16 +4,11 @@ import java.util.Scanner;
 
 /**
  * @author Julian Gabriel Hernandez Jimenez
- *         tarea-02
+ *tarea-02
  */
 public class conversor {
     public static void main(String[] args) {
-        /*
-         * Kilómetros a metros.
-         * Metros a centímetros.
-         * Kilómetros a millas.
-         * Salir.
-         */
+       
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("====================================");
@@ -46,12 +41,12 @@ public class conversor {
 
             System.out.println();
 
-            System.out.println("Seleccione una opción: ");
+            System.out.print("Seleccione una opción: ");
             opcion = scanner.nextInt();
 
             switch (opcion) {
                 case 1: {
-                    System.out.println("Introduce los kilómetros");
+                    System.out.print("Introduce los kilómetros: ");
                     float kilometros = scanner.nextFloat();
 
                     while (kilometros < 0) {
@@ -64,10 +59,11 @@ public class conversor {
 
                     contador++;
                     System.out.println("Conversión realizada correctamente");
+                    System.out.println();
                     break;
                 }
                 case 2: {
-                    System.out.println("Introduce los metros");
+                    System.out.print("Introduce los metros: ");
                     float metros = scanner.nextFloat();
 
                     while (metros < 0) {
@@ -79,10 +75,11 @@ public class conversor {
 
                     contador++;
                     System.out.println("Conversión realizada correctamente");
+                    System.out.println();
                     break;
                 }
                 case 3: {
-                    System.out.println("Introduce los kilómetros");
+                    System.out.print("Introduce los kilómetros: ");
                     float kilometros = scanner.nextFloat();
 
                     while (kilometros < 0) {
@@ -94,6 +91,7 @@ public class conversor {
 
                     contador++;
                     System.out.println("Conversión realizada correctamente");
+                    System.out.println();
                     break;
                 }
                 case 4:
@@ -105,7 +103,7 @@ public class conversor {
             }
 
         }
-
+        // 6. Mostrar el resumen al salir.
         System.out.println();
         System.out.println("====================================");
         System.out.println("Usuario: "+nombreUsusario);
@@ -115,7 +113,7 @@ public class conversor {
         scanner.close();
 
     }
-    // 6. Mostrar el resumen al salir.
+    
 
     
 }
