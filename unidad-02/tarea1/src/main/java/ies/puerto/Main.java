@@ -1,17 +1,44 @@
 package ies.puerto;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+import java.util.Scanner;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
+/**
+ * tarea-01
+ * @author Julian Gabriel Hernandez Jimenez
+ */
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+
+        // 1. Pedir el nombre del cliente.
+        System.out.println("Indique su nombre: ");
+        String nombreCliente = scanner.nextLine();
+
+        // 2. Preguntar la cantidad de productos.
+        System.out.println("Indique la cantidad de productos: ");
+        int cantidad = scanner.nextInt();
+
+        // 3. Inicializar el acumulador total.
+        float total = 0;
+
+        // 4. Usar un bucle for para pedir los productos.
+        for (int i = 0; i < cantidad ; i++) {
+
+            System.out.println("nombre del producto: ");
+            String nombreProduct = scanner.nextLine();
+
+            System.out.println("precio del producto: ");
+            float precioProducto = scanner.nextFloat();
+
         }
+        // 5. Mostrar el número de productos y el total.
+        System.out.println("Cliente: "+nombreCliente);
+        System.out.println("Cantidad de productos: " + cantidad);
+        System.out.println("importe: "+total);
+        System.out.println("Gracias por su compra");
+
+        scanner.close();
     }
 }
