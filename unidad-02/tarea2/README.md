@@ -427,22 +427,153 @@ Si has tenido que cambiar `.gitignore`, incluye ese cambio en un commit de docum
 
 ### Cómo funciona mi programa
 
-Explica cómo has utilizado Scanner, String, int,
-float, el bucle while y el contador.
+Para este programa he usado el scanner para pedir unidades de medida y 
+poder hacer la conversion matematica al momento, siendo que use el while 
+para un menu en bucle el cual permite 4 opciones. 
+He decidido usar while dentro del switch para la repeticion de peticiones en vez de if, 
+resumiendo mucho el funcionamiento. El programa cuenta con instrucciones 
+en caso de numeros fuera de los validos.
 
 ### Validaciones implementadas
 
-Explica qué hace el programa si escribes una opción
-incorrecta o una distancia negativa.
+Si escribes una opcion incorrecta manda un mensaje a pantalla de "opcion no valida", 
+mientras que si colocas una unidad invalida como un numero negativo solo te hara repetir 
+la orden hasta que des un numero correcto
 
 ### Pruebas realizadas
+1. 2. 3. 4. 5. 6. 7.  
+====================================
+         CONVERSOR DAM-PRO          
+====================================
 
-Describe los datos introducidos y los resultados
-obtenidos en las ocho pruebas obligatorias.
+Introduce tu nombre: julian
+
+Bienvenido/a, julian
+1. Kilómetros a metros
+2. Metros a centímetros
+3. Kilómetros a millas
+4. Salir
+
+Seleccione una opción: 1
+Introduce los kilómetros: 3
+Resultado: 3000.0 metros
+Conversión realizada correctamente
+
+1. Kilómetros a metros
+2. Metros a centímetros
+3. Kilómetros a millas
+4. Salir
+
+Seleccione una opción: 2
+Introduce los metros: 2,5
+Resultado: 250.0 centímetros
+Conversión realizada correctamente
+
+1. Kilómetros a metros
+2. Metros a centímetros
+3. Kilómetros a millas
+4. Salir
+
+Seleccione una opción: 3
+Introduce los kilómetros: 10
+Resultado: 6.21371 millas
+Conversión realizada correctamente
+
+1. Kilómetros a metros
+2. Metros a centímetros
+3. Kilómetros a millas
+4. Salir
+
+Seleccione una opción: 1
+Introduce los kilómetros: -5
+La distancia no puede ser negativa. Inténtalo de nuevo:
+1
+Resultado: 1000.0 metros
+Conversión realizada correctamente
+
+1. Kilómetros a metros
+2. Metros a centímetros
+3. Kilómetros a millas
+4. Salir
+
+Seleccione una opción: 2
+Introduce los metros: 0
+Resultado: 0.0 centímetros
+Conversión realizada correctamente
+
+1. Kilómetros a metros
+2. Metros a centímetros
+3. Kilómetros a millas
+4. Salir
+
+Seleccione una opción: 8
+
+Opción no válida
+
+1. Kilómetros a metros
+2. Metros a centímetros
+3. Kilómetros a millas
+4. Salir
+
+Seleccione una opción: 4
+
+8. 
+
+====================================
+         CONVERSOR DAM-PRO          
+====================================
+
+Introduce tu nombre: julian
+
+Bienvenido/a, julian
+1. Kilómetros a metros
+2. Metros a centímetros
+3. Kilómetros a millas
+4. Salir
+
+Seleccione una opción: 1
+Introduce los kilómetros: 28
+Resultado: 28000.0 metros
+Conversión realizada correctamente
+
+1. Kilómetros a metros
+2. Metros a centímetros
+3. Kilómetros a millas
+4. Salir
+
+Seleccione una opción: 2
+Introduce los metros: 75
+Resultado: 7500.0 centímetros
+Conversión realizada correctamente
+
+1. Kilómetros a metros
+2. Metros a centímetros
+3. Kilómetros a millas
+4. Salir
+
+Seleccione una opción: 3
+Introduce los kilómetros: 7,8
+Resultado: 4.8466935 millas
+Conversión realizada correctamente
+
+1. Kilómetros a metros
+2. Metros a centímetros
+3. Kilómetros a millas
+4. Salir
+
+Seleccione una opción: 4
+
+====================================
+Usuario: julian
+conversiones realizadas: 3.0
+Graacias por ultilizar DAM-PRO
+====================================
 
 ### Dificultades y soluciones
 
-Explica alguna dificultad y cómo la resolviste.
+Intente hacer las validaciones de los negativos con if, ya que sonaban lo mas logico 
+pero termine en un enredo que logre resolver con while que repiten todo el rato igual.
+
 ```
 
 En `unidad-02/README.md`, cambia **solo la fila de la tarea 2** a:

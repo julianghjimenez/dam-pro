@@ -99,7 +99,9 @@ public class conversor {
                     break;
 
                 default:
+                    System.out.println();
                     System.out.println("Opción no válida");
+                    System.out.println();
             }
 
         }
