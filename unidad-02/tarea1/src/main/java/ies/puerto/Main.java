@@ -6,14 +6,18 @@ import java.util.Scanner;
  * tarea-01
  * @author Julian Gabriel Hernandez Jimenez
  */
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+    
 
-
+        System.out.println("===============================");
+        System.out.println("        TIENDA DAM-PRO         ");
+        System.out.println("===============================");
 
         // 1. Pedir el nombre del cliente.
-        System.out.println("Indique su nombre: ");
+        System.out.print("Indique su nombre: ");
         String nombreCliente = scanner.nextLine();
 
 
@@ -21,31 +25,42 @@ public class Main {
         System.out.println("¿Cuántos productos vas a comprar? ");
         int cantidad = scanner.nextInt();
 
+        System.out.println();
+        scanner.nextLine();
+
         // 3. Inicializar el acumulador total.
         float total = 0;
 
         // 4. Usar un bucle for para pedir los productos.
-        for (int i = 0; i < cantidad ; i++) {
+        for (int i = 1; i < cantidad+1; i++) {
 
-            System.out.println("nombre del producto: ");
+            System.out.println("Producto "+i);
+            System.out.print("nombre: ");
             String nombreProduct = scanner.nextLine();
+
+            System.out.print("precio: ");
+            float precioProducto = scanner.nextFloat();
 
             scanner.nextLine();
 
-            System.out.println("precio del producto: ");
-            float precioProducto = scanner.nextFloat();
-
-
             System.out.println(nombreProduct +" - "+ precioProducto + " euros");
 
-            total = precioProducto;
+            System.out.println();
+            total += precioProducto;
         }
-        // 5. Mostrar el número de productos y el total.
-        System.out.println("Cliente: "+nombreCliente);
-        System.out.println("Cantidad de productos: " + cantidad);
-        System.out.println("importe: "+total);
-        System.out.println("Gracias por su compra");
 
+        // 5. Mostrar el número de productos y el total.
+        System.out.println();
+        System.out.println("===============================");
+        System.out.println("        TOTAL DEL TICKET       ");
+        System.out.println("===============================");
+        System.out.println();
+        System.out.println("Cliente: "+nombreCliente);
+        System.out.println("Productos comprados: " + cantidad);
+        System.out.println("TOTAL: "+total);
+        System.out.println("Gracias por su compra, "+nombreCliente);
+    
         scanner.close();
+    
     }
 }
