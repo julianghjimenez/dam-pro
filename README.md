@@ -8,4 +8,4 @@ Ejercicios de programación básica en Java.
 
 | Tarea | Descripción | Estado |
 | [Tarea 1](tarea1/) | Generador de tickets de compra | En desarrollo |
-|---|---|---|
+| [Tarea 2](tarea2/) | Conversor de medidas interactivo | En desarrollo |
