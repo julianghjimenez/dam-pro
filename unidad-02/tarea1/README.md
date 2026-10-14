@@ -364,18 +364,135 @@ Si has modificado `.gitignore`, regístralo junto con el siguiente commit o en u
 
 ### Cómo funciona mi programa
 
-Explica cómo has utilizado Scanner, las variables,
-el bucle for y el acumulador.
+En este programa he usado scanner como la base para una serie de preguntas que estaran hechas para completar un tipo de ticket. Encontraras preguntas con respecto al nombre del cliente, el producto a comprar asi como su costo, ademas de poder hacerlo con varios y obtener un total, este apartado se debe al uso del fori para implementar un bucle de preguntas que permite tener tanto tipos de productos como quieras comprar.
 
 ### Pruebas realizadas
 
-Describe los datos introducidos y los resultados
-obtenidos en las cuatro pruebas obligatorias.
+1)  
+===============================
+        TIENDA DAM-PRO         
+===============================
+Indique su nombre: julian
+¿Cuántos productos vas a comprar? 
+1
+
+Producto 1
+nombre: pan
+precio: 5
+pan - 5.0 euros
+
+
+===============================
+        TOTAL DEL TICKET       
+===============================
+
+Cliente: julian
+Productos comprados: 1
+TOTAL: 5.0
+Gracias por su compra, julian
+
+2) 
+===============================
+        TIENDA DAM-PRO         
+===============================
+Indique su nombre: julian
+¿Cuántos productos vas a comprar? 
+2
+
+Producto 1
+nombre: pan
+precio: 3
+pan - 3.0 euros
+
+Producto 2
+nombre: arroz
+precio: 2
+arroz - 2.0 euros
+
+
+===============================
+        TOTAL DEL TICKET       
+===============================
+
+Cliente: julian
+Productos comprados: 2
+TOTAL: 5.0
+Gracias por su compra, julian
+
+3) 
+===============================
+        TIENDA DAM-PRO         
+===============================
+Indique su nombre: julian
+¿Cuántos productos vas a comprar? 
+3
+
+Producto 1
+nombre: pan
+precio: 1,5
+pan - 1.5 euros
+
+Producto 2
+nombre: arroz
+precio: 2,5
+arroz - 2.5 euros
+
+Producto 3
+nombre: agua 5L 
+precio: 4
+agua 5L - 4.0 euros
+
+
+===============================
+        TOTAL DEL TICKET       
+===============================
+
+Cliente: julian
+Productos comprados: 3
+TOTAL: 8.0
+Gracias por su compra, julian
+
+4) 
+===============================
+        TIENDA DAM-PRO         
+===============================
+Indique su nombre: julian
+¿Cuántos productos vas a comprar? 
+4
+
+Producto 1
+nombre: pan
+precio: 1
+pan - 1.0 euros
+
+Producto 2
+nombre: pan
+precio: 1
+pan - 1.0 euros
+
+Producto 3
+nombre: pan
+precio: 1
+pan - 1.0 euros
+
+Producto 4
+nombre: pan
+precio: 1
+pan - 1.0 euros
+
+
+===============================
+        TOTAL DEL TICKET       
+===============================
+
+Cliente: julian
+Productos comprados: 4
+TOTAL: 4.0
+Gracias por su compra, julian
 
 ### Dificultades y soluciones
 
-Explica al menos una dificultad encontrada o indica
-qué parte has revisado con especial atención.
+He estado peleando con los saltos de linea, pues el primero que hice separaba nombre del producto de precio, lo que despues eliminaba el nombre del producto del siguiente sout, ya despues de un rato de probar pude arreglarlo y hacerlo funcionar
 ```
 
 Abre también `unidad-02/README.md` y modifica el estado de tu tarea a **Completada**:

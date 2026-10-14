@@ -24,6 +24,9 @@ public class Main {
         // 2. Preguntar la cantidad de productos.
         System.out.println("¿Cuántos productos vas a comprar? ");
         int cantidad = scanner.nextInt();
+        if (cantidad <= 0) {
+            System.out.println("Numero inválido");
+        }
 
         System.out.println();
         scanner.nextLine();
