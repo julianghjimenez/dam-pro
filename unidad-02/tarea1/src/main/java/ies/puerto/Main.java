@@ -16,8 +16,9 @@ public class Main {
         System.out.println("Indique su nombre: ");
         String nombreCliente = scanner.nextLine();
 
+
         // 2. Preguntar la cantidad de productos.
-        System.out.println("Indique la cantidad de productos: ");
+        System.out.println("¿Cuántos productos vas a comprar? ");
         int cantidad = scanner.nextInt();
 
         // 3. Inicializar el acumulador total.
@@ -29,9 +30,15 @@ public class Main {
             System.out.println("nombre del producto: ");
             String nombreProduct = scanner.nextLine();
 
+            scanner.nextLine();
+
             System.out.println("precio del producto: ");
             float precioProducto = scanner.nextFloat();
 
+
+            System.out.println(nombreProduct +" - "+ precioProducto + " euros");
+
+            total = precioProducto;
         }
         // 5. Mostrar el número de productos y el total.
         System.out.println("Cliente: "+nombreCliente);
