@@ -5,7 +5,7 @@
 **Sistemas operativos:** Windows (Git Bash) y Debian (Bash)  
 **Carpeta de trabajo:** `~/git/dam-pro/`  
 
-> **Documento del profesor:** guarda este archivo en la carpeta de la tarea con el nombre exacto `README.md`. No borres el enunciado. Al finalizar, añade tus explicaciones y pruebas en una sección al final.
+> **Documento del profesor:** guarda este archivo en la carpeta de la tarea con el nombre exacto `../../README.md`. No borres el enunciado. Al finalizar, añade tus explicaciones y pruebas en una sección al final.
 
 ---
 
@@ -97,7 +97,7 @@ La rama de esta práctica es `main`. Si tienes modificaciones locales pendientes
 1. En IntelliJ IDEA selecciona **File → Open** y abre `git/dam-pro`.
 2. En el panel **Project**, busca `unidad-02`.
 3. Si no existe, haz clic derecho sobre `dam-pro` → **New → Directory** → escribe `unidad-02`.
-4. Dentro de la unidad comprueba si existe `README.md`.
+4. Dentro de la unidad comprueba si existe `../../README.md`.
 5. Si no existe, créalo mediante **New → File** y escribe:
 
 ```markdown
@@ -119,7 +119,7 @@ Si ya existe, **no reemplaces su contenido** y conserva las tareas anteriores.
 
 **La estructura Maven se crea desde el IDE, no con `mkdir` ni con comandos Maven.**
 
-1. Comprueba si ya existe `unidad-02/tarea3`. Si contiene `pom.xml`, abre ese proyecto en lugar de recrearlo.
+1. Comprueba si ya existe `tarea3`. Si contiene `pom.xml`, abre ese proyecto en lugar de recrearlo.
 2. Si no existe, selecciona **File → New → Project**.
 3. Elige lenguaje **Java** y sistema de construcción **Maven** (según la versión, Maven puede aparecer como tipo de proyecto).
 4. En **Name** escribe `tarea3`.
@@ -128,7 +128,7 @@ Si ya existe, **no reemplaces su contenido** y conserva las tareas anteriores.
 7. Si solicita datos Maven, indica **GroupId** `es.dam` y **ArtifactId** `tarea3`.
 8. Si aparece **Create Git repository**, desactívalo: ya existe el Git de `dam-pro`.
 9. Pulsa **Create**; si es necesario, abre el proyecto en otra ventana. Espera a que Maven cargue sus dependencias.
-10. Desde el panel Project, añade el archivo `README.md` entregado en Moodle a la raíz de `tarea3`, junto al `pom.xml`.
+10. Desde el panel Project, añade el archivo `../../README.md` entregado en Moodle a la raíz de `tarea3`, junto al `pom.xml`.
 
 La estructura esperada es:
 
@@ -323,7 +323,7 @@ Ejecuta `Main.main()` desde IntelliJ IDEA y verifica:
 
 En la terminal del proyecto Maven también puedes utilizar `mvn compile` si Maven está disponible. No subas `target/` ni archivos `.class`.
 
-Comprueba el `.gitignore` en la raíz de `dam-pro`: debe contener `**/target/`, `*.class`, `.idea/` y `*.iml` (sin borrar reglas existentes). Si lo modificas, incorpóralo al siguiente commit.
+Comprueba el `.gitignore` en la raíz de `dam-pro`: debe contener `**/target/`, `*.class`, `../../.idea` y `*.iml` (sin borrar reglas existentes). Si lo modificas, incorpóralo al siguiente commit.
 
 ## 2.7. Documentar pruebas y actualizar el índice
 
@@ -388,7 +388,7 @@ git log --oneline HEAD..origin/main
 git pull --ff-only origin main
 ```
 
-3. Abre el proyecto Maven `unidad-02/tarea3`, completa el código y ejecuta las pruebas que faltan.
+3. Abre el proyecto Maven `tarea3`, completa el código y ejecuta las pruebas que faltan.
 4. Documenta los resultados y actualiza el índice a **Completada** únicamente al finalizar.
 5. Publica los últimos cambios:
 
