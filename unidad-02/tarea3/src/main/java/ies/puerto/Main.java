@@ -2,11 +2,15 @@ package ies.puerto;
 
 import java.util.Scanner;
 
+/**
+ * @JulianGabrielHernandezJimenez
+ * tarea-03
+ */
 public class Main {
     public static void main(String[] args) {
 
         float dinerAhorrado = 0;
-
+        float dinerAhorradoFinal = 0;
         Scanner scanner = new Scanner(System.in);
 
         // Pedir nombre y ahorro inicial.
@@ -23,36 +27,45 @@ public class Main {
             System.out.println("¿Cuanto dinero tienes ahorrado?");
             dinerAhorrado = scanner.nextFloat();
         } while (dinerAhorrado < 0);
+        
+        
+        dinerAhorradoFinal = dinerAhorrado;
 
         System.out.println();
 
         // Preparar acumuladores y contador.
         // Repetir aportaciones mediante do-while.
         int contador = 0;
-        int aportado = 0;
+        float totalAportado = 0;
+        
         boolean parar = false;
             do {
                 System.out.println("Hola, " + nombre);
-
+                float aportado;
+                do {
                 System.out.print("Introduce una cantidad para aportar: ");
-                aportado = scanner.nextInt();
+                 aportado = scanner.nextFloat();
+                } while (aportado < 0);
+                dinerAhorradoFinal += aportado;
+                totalAportado += aportado;
 
-                dinerAhorrado += aportado;
-
-                System.out.println("Aportacion registrada. Ahorro actual: " + dinerAhorrado);
+                System.out.println("Aportacion registrada. Ahorro actual: " + dinerAhorradoFinal);
                 System.out.println();
 
                 scanner.nextLine();
 
+
                 System.out.println("¿Deseas realizar otra aportación? (S/N): ");
-                String operacion = scanner.nextLine();
-                if (operacion.equalsIgnoreCase("n")) {
-                    parar = true;
+                String operacion = scanner.nextLine();      
+                while (!operacion.equalsIgnoreCase("s") && !operacion.equalsIgnoreCase("n")) {  
+                System.out.println("¿Deseas realizar otra aportación? (S/N): ");
+                operacion = scanner.nextLine();     
                 }
+                parar = operacion.equalsIgnoreCase("n");
+              
+            System.out.println();
 
-                System.out.println();
-
-                aportado++;
+            
                 contador++;
 
             } while (!parar);
@@ -68,9 +81,8 @@ public class Main {
         System.out.println("Usuario: "+nombre);
         System.out.println("Ahorro inicial: " + dinerAhorrado);
         System.out.println("Aportaciones realizadas: " + contador);
-        System.out.println("Total aportado: "+ aportado);
-        System.out.println("Ahorro final: "+dinerAhorrado);
+        System.out.println("Total aportado: "+ totalAportado);
+        System.out.println("Ahorro final: "+ dinerAhorradoFinal);
 
     }
 }
-
