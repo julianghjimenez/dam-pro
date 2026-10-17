@@ -434,3 +434,7 @@ El profesor revisará la estructura Maven, el `pom.xml`, el código, las pruebas
 ## Ampliación voluntaria
 
 Solicita una meta de ahorro (`float`) y muestra cuánto falta para alcanzarla después de cada aportación. Si la meta se alcanza, felicita al usuario. Realiza un commit adicional: `feat: incorporar meta de ahorro`.
+
+## Desarrollo y pruebas del alumno
+
+el do-while es un bucle que actua sin ninguna condicion hasta llegar al final de este mismo donde se definen las condiciones para que el bucle pueda continuar o repetirse. Para validar si hacer otra operacion o no use el equalIgnoreCase para definir las opciones N/n y S/s. La mayor dificultad fue un pequeño error en los bucles do-while que tuve al principio y hacia un bucle infinito, caso tambien resuelto. 
