@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @author Julian Gabriel Hernandez Jimenez
  *tarea-02
  */
-public class conversor {
+public class Conversor {
     public static void main(String[] args) {
        
         Scanner scanner = new Scanner(System.in);

@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @JulianGabrielHernandezJimenez
  * tarea-03
  */
-public class Main {
+public class Ahorro {
     public static void main(String[] args) {
 
         float dinerAhorrado = 0;
