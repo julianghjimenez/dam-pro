@@ -21,4 +21,25 @@ public class DatosPersonales {
         }
         return Integer.parseInt(sEdad);
     }
+
+    /**
+     * Funcion que transforma la altura(String) --> altura(double)
+     * @param sAltura String que almacena la altura
+     * @return altura(double)
+     */
+    static double convertirAltura(String sAltura) {
+        if (sAltura == null || sAltura < 0) {
+            return 0;
+        }
+        return Double.valueOff(sAltura);
+    }
+
+    static boolean convertirMatricula(String sMatricula){
+
+    }
+
+    static int esMayorDeEdad(int i){
+
+    }
+
 }
