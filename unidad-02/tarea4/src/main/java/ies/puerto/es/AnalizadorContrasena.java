@@ -96,7 +96,17 @@ public class AnalizadorContrasena {
         Scanner scanner = new Scanner(System.in);
        
         System.out.println("Introduce una contraseña: ");
+        String sContra = scanner.nextLine();
 
+        int iMayusculas = contarMayusculas(sContra);
+        int iMinusculas = contarMayusculas(sContra);
+        int iDigitos = contarDigitos(sContra);
+        int iSimbolos = contarSimbolos(sContra);
+        boolean bLongitudM = tieneLongitudMinima(sContra);
+        boolean bContraV = esContrasenaValida(sContra);
+        String informe = generarInforme(iMayusculas, iMinusculas, iDigitos, iSimbolos, bLongitudM, bContraV);
+
+        System.out.println(informe);
         scanner.close();
     }
 
