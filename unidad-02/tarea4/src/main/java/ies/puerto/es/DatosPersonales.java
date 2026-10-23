@@ -101,7 +101,7 @@ public class DatosPersonales {
     }
 
     /**
-     * Funcion formatea la ficha
+     * Funcion que formatea la ficha
      * @param sNombre String nombre de la ficha
      * @param iEdad INteger edad de la ficha
      * @param dAltura double de altura de la ficha

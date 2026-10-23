@@ -2,10 +2,19 @@ package ies.puerto.es;
 
 import java.util.Scanner;
 
+/**
+ * @author julianghjimenez
+ * @version 1.0.0
+ */
 public class AnalizadorContrasena {
 
+    /**
+     * Funcion que cuenta minusculas en contrasenia
+     * @param sContra String que almacena la contrasenia
+     * @return Integer numero de mayusculas
+     */
     static int contarMayusculas(String sContra) {
-        if (sContra == null) {
+        if (sContra == null || sContra.isEmpty()) {
             return 0;
         }
         int contador = 0;
@@ -17,8 +26,13 @@ public class AnalizadorContrasena {
         return contador;
     }
 
+    /**
+     * Funcion que cuenta minusculas en contrasenia
+     * @param sContra String que almacena la contrasenia
+     * @return Integer numero de minusculas
+     */
     static int contarMinusculas(String sContra) {
-        if (sContra == null) {
+        if (sContra == null || sContra.isEmpty()) {
             return 0;
         }
         int contador = 0;
@@ -26,13 +40,22 @@ public class AnalizadorContrasena {
             if (Character.isLowerCase(sContra.charAt(i))) {
                 contador++;
             }
-
+            /*
+            if ( Character.isAlphabetic(caracter) && !Character.isUpperCase(sContra.charAt(i))) {
+                contador++;
+            }
+            */
         }
         return contador;
     }
 
+    /**
+     * Funcion que cuenta digitos en contrasenia
+     * @param sContra String que almacena la contrasenia
+     * @return Integer numero de digitos
+     */
     static int contarDigitos(String sContra) {
-        if (sContra == null) {
+        if (sContra == null || sContra.isEmpty()) {
             return 0;
         }
         int contador = 0;
@@ -45,6 +68,11 @@ public class AnalizadorContrasena {
         return contador;
     }
 
+    /**
+     * Funcion que cueanta los simbolos en contrasenia
+     * @param sContra String que almacena la contresenia
+     * @return Integer numero de simbolos
+     */
     static int contarSimbolos(String sContra) {
         if (sContra == null || sContra.isEmpty()) {
             return 0;
@@ -58,18 +86,32 @@ public class AnalizadorContrasena {
         return contador;
     }
 
+    /**
+     * Funcion que defina la longitud minima de la contrasenia
+     * @param sContra String que almacena la contresenia
+     * @return true/false
+     */
     static boolean tieneLongitudMinima(String sContra) {
         if (sContra == null || sContra.isEmpty()) {
             return false;
         }
 
-        if (sContra.length() > 8) {
+        if (sContra.length() >= 8) {
             return true;
         }
+
+        /*
+        return sContra.length() >= 8
+        */
         return false;
 
     }
 
+    /**
+     * Funcion que valida la contraenia
+     * @param sContra String que almacena la contresenia
+     * @return true/false
+     */
     static boolean esContrasenaValida(String sContra) {
         if (sContra == null || sContra.isEmpty()) {
             return false;
@@ -84,6 +126,16 @@ public class AnalizadorContrasena {
 
     }
 
+    /**
+     * Funcion encatgada de almacenar y generar un informe
+     * @param iMayusculas Integer de mayusculas
+     * @param iMinusculas Integer de minusculas
+     * @param iDigitos Integer de digitos
+     * @param iSimbolos Integer de simbolos
+     * @param bLongitudM true/false
+     * @param bContraV true/false
+     * @return generarInforme()
+     */
     static String generarInforme(int iMayusculas, int iMinusculas, int iDigitos, int iSimbolos, boolean bLongitudM,
             boolean bContraV) {
 
@@ -91,6 +143,10 @@ public class AnalizadorContrasena {
                 + iSimbolos +
                 ", Longitud: " + bLongitudM + ", Resultado: " + bContraV;
     }
+    /*static String generarInforme(String sContra){
+    String resultado = "Mayusculas: " + contarMayusculas(sContra)+ ", Minusculas: " + contarMinusculas(sCadena) + ...
+    }
+    * */
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
