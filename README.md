@@ -11,3 +11,4 @@ Ejercicios de programación básica en Java.
 | [Tarea 1](tarea1/) | Generador de tickets de compra | completada      |
 | [Tarea 2](tarea2/) | Conversor de medidas interactivo | completada  |
 | [Tarea 3](tarea3/) | Simulador de ahorro personal | completada |
+| [Tarea 4](tarea-4/) | Clases envolventes y funciones | En desarrollo |
