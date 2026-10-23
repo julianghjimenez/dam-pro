@@ -143,8 +143,11 @@ public class AnalizadorContrasena {
                 + iSimbolos +
                 ", Longitud: " + bLongitudM + ", Resultado: " + bContraV;
     }
-    /*static String generarInforme(String sContra){
-    String resultado = "Mayusculas: " + contarMayusculas(sContra)+ ", Minusculas: " + contarMinusculas(sCadena) + ...
+    /*
+    static String generarInforme(String sContra){
+    String resultado = "Mayusculas: " + contarMayusculas(sContra)+ ", Minusculas: " + contarMinusculas(sContra) +
+     ", Digitos: " + contarDigitos(sContra) + ", Simbolos: " + contarSimbolos(sContra) +
+     ", longitud: " + tieneLongitudMinima(sContra) + ", resultado: " + esContrasenaValida(sContra)
     }
     * */
 
