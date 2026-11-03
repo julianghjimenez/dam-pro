@@ -1,7 +1,9 @@
 package es.dampro.unidad2.tarea6;
 
 /**
- * TODO: documenta el propósito y la responsabilidad de la clase MayorNumero.
+ * @author julianghjimenez
+ * @version 1.0.0
+ * Busca el número mayor de una lista de números.
  */
 public final class MayorNumero {
 
@@ -10,12 +12,25 @@ public final class MayorNumero {
     }
 
     /**
-     * TODO: explica el algoritmo y su comportamiento con datos límite.
-     * @param numeros Dato de entrada que debe cumplir el contrato del enunciado.
-     * @return Valor máximo de la secuencia.
+     * Funcion encargada de buscar numero mayor
+     * @param sNumeros String de lista de numeros
+     * @return Integer numero mayor
      */
-    public static int obtenerMayor(String numeros) {
-        // TODO: implementa el algoritmo sin sustituirlo por una función que lo resuelva directamente.
-        throw new UnsupportedOperationException("Método pendiente de implementar: obtenerMayor");
+    public static int obtenerMayor(String sNumeros) {
+        if (sNumeros == null || sNumeros.trim().isEmpty()) {
+            throw new IllegalArgumentException();
+        }
+
+        String[] numeros = sNumeros.split(",", -1);
+        int mayor = Integer.parseInt(numeros[0].trim());
+
+        for (int i = 1; i < numeros.length; i++) {
+            int numero = Integer.parseInt(numeros[i].trim());
+            if (numero > mayor) {
+                mayor = numero;
+            }
+        }
+
+        return mayor;
     }
 }
