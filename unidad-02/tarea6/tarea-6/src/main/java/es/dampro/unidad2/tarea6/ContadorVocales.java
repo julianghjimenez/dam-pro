@@ -1,15 +1,31 @@
 package es.dampro.unidad2.tarea6;
 
-/** TODO: documenta la finalidad de la clase. */
+/**
+ * @author julianghjimenez
+ * @version 1.0.0
+ * ContadorVocales
+ */
 public final class ContadorVocales {
     private ContadorVocales() { }
 
     /**
-     * TODO: describe cómo se realiza el algoritmo.
-     * @param texto Documenta el parámetro.
-     * @return Documenta el valor devuelto.
+     * Funcion encargada de contar vocales en un texto
+     * @param texto String/texto a contar
+     * @return Integer del numero de vocales.
      */
-    public static int contarVocales(String texto) {
-        throw new UnsupportedOperationException("Pendiente de implementar");
+    public static int contarVocales(String iTexto) {
+        if (iTexto == null || iTexto.isEmpty()) {
+            throw new IllegalArgumentException();
+        }
+        int resultado = 0;
+        iTexto = iTexto.toLowerCase();
+        for (int i = 0; i < iTexto.length(); i++) {
+             char caracter = iTexto.charAt(i);
+            if ((caracter == 'a' || (caracter == 'e') || (caracter == 'i')
+                    || (caracter == 'o') || (caracter == 'u'))) {
+                resultado++;
+        }
+    }
+        return resultado;
     }
 }
