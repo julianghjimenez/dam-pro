@@ -1,4 +1,6 @@
-package es.dampro.unidad2.tarea6;
+package src.main.java.es.dampro.unidad2.tarea6;
+
+import java.util.Scanner;
 
 /**
  * @author Julianghjimenez
@@ -13,11 +15,31 @@ public final class BinarioDecimal {
 
     /**
      * TODO: explica el algoritmo y su comportamiento con datos límite.
-     * @param binario Dato de entrada que debe cumplir el contrato del enunciado.
+     * @param sBinario Dato de entrada que debe cumplir el contrato del enunciado.
      * @return Número decimal correspondiente.
      */
-    public static int convertirBinario(String binario) {
-        // TODO: implementa el algoritmo sin sustituirlo por una función que lo resuelva directamente.
-        throw new UnsupportedOperationException("Método pendiente de implementar: convertirBinario");
+    public static int convertirBinario(String sBinario) {
+       if (sBinario == null){
+           throw new IllegalArgumentException();
+       }
+       if (sBinario.isEmpty()){
+           return 0;
+       }
+       int resultado = 0;
+        for (int i = 0; i <= sBinario.length(); i++) {
+            int convertir = (int) Math.pow(2, i);
+            Character caracter = sBinario.charAt(i);
+
+        }
+       return resultado;
+    }
+
+    static void main() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Intoduce un binario: ");
+        String sBinario = teclado.nextLine();
+
+        int resultado = convertirBinario(sBinario);
+        System.out.println("resultado: "+resultado);
     }
 }

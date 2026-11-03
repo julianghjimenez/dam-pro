@@ -1,4 +1,4 @@
-package es.dampro.unidad2.tarea6;
+package src.main.java.es.dampro.unidad2.tarea6;
 
 /**
  * TODO: documenta el propósito y la responsabilidad de la clase Factorial.

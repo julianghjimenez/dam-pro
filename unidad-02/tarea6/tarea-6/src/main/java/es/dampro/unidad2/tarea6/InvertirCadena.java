@@ -1,4 +1,4 @@
-package es.dampro.unidad2.tarea6;
+package src.main.java.es.dampro.unidad2.tarea6;
 
 /**
  * @author julianghjimenez

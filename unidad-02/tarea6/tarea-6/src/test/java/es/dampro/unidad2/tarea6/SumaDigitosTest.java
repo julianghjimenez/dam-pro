@@ -1,6 +1,8 @@
-package es.dampro.unidad2.tarea6;
+package src.test.java.es.dampro.unidad2.tarea6;
 
 import org.junit.jupiter.api.Test;
+import src.main.java.es.dampro.unidad2.tarea6.SumaDigitos;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /** Pruebas automáticas del contrato funcional de la clase.SumaDigitos . */

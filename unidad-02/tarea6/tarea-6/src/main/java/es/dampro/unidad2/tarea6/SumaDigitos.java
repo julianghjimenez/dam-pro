@@ -1,9 +1,9 @@
-package es.dampro.unidad2.tarea6;
+package src.main.java.es.dampro.unidad2.tarea6;
 
 /**
  * @author julianghjimenez
  * @version 1.0.0
- *          SumaDigitos
+ * SumaDigitos
  */
 public final class SumaDigitos {
 
@@ -26,7 +26,6 @@ public final class SumaDigitos {
         for (int i = 0; i < numero.length(); i++) {
             Character caracter = numero.charAt(i);
             int valor = Integer.parseInt(String.valueOf(caracter));
-
             resultado += valor;
 
         }

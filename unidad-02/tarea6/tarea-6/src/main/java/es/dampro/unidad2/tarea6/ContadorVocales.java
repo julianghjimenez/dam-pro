@@ -1,4 +1,4 @@
-package es.dampro.unidad2.tarea6;
+package src.main.java.es.dampro.unidad2.tarea6;
 
 /**
  * @author julianghjimenez
@@ -12,7 +12,7 @@ public final class ContadorVocales {
     /**
      * Funcion encargada de contar vocales en un texto
      * 
-     * @param texto String/texto a contar
+     * @param iTexto String/texto a contar
      * @return Integer del numero de vocales.
      */
     public static int contarVocales(String iTexto) {
