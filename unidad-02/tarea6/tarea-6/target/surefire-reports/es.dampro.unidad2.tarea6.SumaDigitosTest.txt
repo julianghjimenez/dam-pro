@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: es.dampro.unidad2.tarea6.SumaDigitosTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! -- in es.dampro.unidad2.tarea6.SumaDigitosTest
+es.dampro.unidad2.tarea6.SumaDigitosTest.variosCerosTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException
+	at es.dampro.unidad2.tarea6.SumaDigitos.sumarDigitos(SumaDigitos.java:34)
+	at es.dampro.unidad2.tarea6.SumaDigitosTest.variosCerosTest(SumaDigitosTest.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.SumaDigitosTest.ceroTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException
+	at es.dampro.unidad2.tarea6.SumaDigitos.sumarDigitos(SumaDigitos.java:34)
+	at es.dampro.unidad2.tarea6.SumaDigitosTest.ceroTest(SumaDigitosTest.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

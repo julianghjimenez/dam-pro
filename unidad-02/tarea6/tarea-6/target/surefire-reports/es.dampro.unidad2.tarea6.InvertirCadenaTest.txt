@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: es.dampro.unidad2.tarea6.InvertirCadenaTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! -- in es.dampro.unidad2.tarea6.InvertirCadenaTest
+es.dampro.unidad2.tarea6.InvertirCadenaTest.textoVacioTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalArgumentException: Dato inválido
+	at es.dampro.unidad2.tarea6.InvertirCadena.invertir(InvertirCadena.java:22)
+	at es.dampro.unidad2.tarea6.InvertirCadenaTest.textoVacioTest(InvertirCadenaTest.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

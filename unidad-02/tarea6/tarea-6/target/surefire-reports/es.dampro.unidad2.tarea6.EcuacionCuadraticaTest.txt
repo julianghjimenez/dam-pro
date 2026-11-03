@@ -1,0 +1,140 @@
+-------------------------------------------------------------------------------
+Test set: es.dampro.unidad2.tarea6.EcuacionCuadraticaTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 5, Errors: 7, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! -- in es.dampro.unidad2.tarea6.EcuacionCuadraticaTest
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.coeficienteCeroTest -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.coeficienteCeroTest(EcuacionCuadraticaTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.dosRaicesTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.dosRaicesTest(EcuacionCuadraticaTest.java:7)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.noFinitoTest -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.noFinitoTest(EcuacionCuadraticaTest.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.lambda$noFinitoTest$0(EcuacionCuadraticaTest.java:29)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.anuloTest -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.anuloTest(EcuacionCuadraticaTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.lambda$anuloTest$0(EcuacionCuadraticaTest.java:21)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.blancosExtremosTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.blancosExtremosTest(EcuacionCuadraticaTest.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.negativosTest -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.negativosTest(EcuacionCuadraticaTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.aceroTest -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.aceroTest(EcuacionCuadraticaTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.lambda$aceroTest$0(EcuacionCuadraticaTest.java:23)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.raizDobleTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.raizDobleTest(EcuacionCuadraticaTest.java:9)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.malFormadoTest -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.NumberFormatException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.malFormadoTest(EcuacionCuadraticaTest.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.lambda$malFormadoTest$0(EcuacionCuadraticaTest.java:27)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.cadenaVaciaTest -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.cadenaVaciaTest(EcuacionCuadraticaTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.lambda$cadenaVaciaTest$0(EcuacionCuadraticaTest.java:25)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.sinRaicesTest -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.sinRaicesTest(EcuacionCuadraticaTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.decimalesTest -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.EcuacionCuadratica.calcularDiscriminante(EcuacionCuadratica.java:13)
+	at es.dampro.unidad2.tarea6.EcuacionCuadraticaTest.decimalesTest(EcuacionCuadraticaTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

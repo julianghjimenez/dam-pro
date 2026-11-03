@@ -1,0 +1,116 @@
+-------------------------------------------------------------------------------
+Test set: es.dampro.unidad2.tarea6.NumeroPrimoTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 2, Errors: 10, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! -- in es.dampro.unidad2.tarea6.NumeroPrimoTest
+es.dampro.unidad2.tarea6.NumeroPrimoTest.nuloTest -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.nuloTest(NumeroPrimoTest.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.lambda$nuloTest$0(NumeroPrimoTest.java:72)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.NumeroPrimoTest.diecisieteTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.diecisieteTest(NumeroPrimoTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.NumeroPrimoTest.textoTest -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.NumberFormatException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.textoTest(NumeroPrimoTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.lambda$textoTest$0(NumeroPrimoTest.java:78)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.NumeroPrimoTest.ceroTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.ceroTest(NumeroPrimoTest.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.NumeroPrimoTest.unoTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.unoTest(NumeroPrimoTest.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.NumeroPrimoTest.negativoTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.negativoTest(NumeroPrimoTest.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.NumeroPrimoTest.primoGrandeTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.primoGrandeTest(NumeroPrimoTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.NumeroPrimoTest.cuadradoDePrimoTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.cuadradoDePrimoTest(NumeroPrimoTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.NumeroPrimoTest.veinteTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.veinteTest(NumeroPrimoTest.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.NumeroPrimoTest.tresTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.tresTest(NumeroPrimoTest.java:48)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.NumeroPrimoTest.cuatroTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.cuatroTest(NumeroPrimoTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.NumeroPrimoTest.dosTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: esPrimo
+	at es.dampro.unidad2.tarea6.NumeroPrimo.esPrimo(NumeroPrimo.java:19)
+	at es.dampro.unidad2.tarea6.NumeroPrimoTest.dosTest(NumeroPrimoTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

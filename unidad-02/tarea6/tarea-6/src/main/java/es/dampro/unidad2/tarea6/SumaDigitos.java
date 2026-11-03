@@ -30,9 +30,7 @@ public final class SumaDigitos {
             resultado += valor;
 
         }
-        if (resultado <= 0) {
-            throw new IllegalArgumentException();
-        }
+       
 
         return resultado;
     }

@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: es.dampro.unidad2.tarea6.PalindromoTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.066 s <<< FAILURE! -- in es.dampro.unidad2.tarea6.PalindromoTest
+es.dampro.unidad2.tarea6.PalindromoTest.espaciosTest -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:231)
+	at es.dampro.unidad2.tarea6.PalindromoTest.espaciosTest(PalindromoTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.PalindromoTest.vacioTest -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalArgumentException: No es palindromo
+	at es.dampro.unidad2.tarea6.Palindromo.esPalindromo(Palindromo.java:21)
+	at es.dampro.unidad2.tarea6.PalindromoTest.vacioTest(PalindromoTest.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

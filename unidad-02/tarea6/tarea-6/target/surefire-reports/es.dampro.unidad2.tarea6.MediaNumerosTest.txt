@@ -1,0 +1,132 @@
+-------------------------------------------------------------------------------
+Test set: es.dampro.unidad2.tarea6.MediaNumerosTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 4, Errors: 8, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! -- in es.dampro.unidad2.tarea6.MediaNumerosTest
+es.dampro.unidad2.tarea6.MediaNumerosTest.nuloTest -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.nuloTest(MediaNumerosTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.lambda$nuloTest$0(MediaNumerosTest.java:23)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.MediaNumerosTest.espaciosTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.espaciosTest(MediaNumerosTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.MediaNumerosTest.cerosTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.cerosTest(MediaNumerosTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.MediaNumerosTest.unicoTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.unicoTest(MediaNumerosTest.java:9)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.MediaNumerosTest.extremosTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.extremosTest(MediaNumerosTest.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.MediaNumerosTest.vacioTest -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.vacioTest(MediaNumerosTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.lambda$vacioTest$0(MediaNumerosTest.java:25)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.MediaNumerosTest.fraccionTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.fraccionTest(MediaNumerosTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.MediaNumerosTest.negativosTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.negativosTest(MediaNumerosTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.MediaNumerosTest.comaFinalTest -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.comaFinalTest(MediaNumerosTest.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.lambda$comaFinalTest$0(MediaNumerosTest.java:27)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.MediaNumerosTest.mediaSimpleTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.mediaSimpleTest(MediaNumerosTest.java:7)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.MediaNumerosTest.compensacionTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.compensacionTest(MediaNumerosTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.MediaNumerosTest.malFormadoTest -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.NumberFormatException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.malFormadoTest(MediaNumerosTest.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Pendiente de implementar
+	at es.dampro.unidad2.tarea6.MediaNumeros.calcularMedia(MediaNumeros.java:13)
+	at es.dampro.unidad2.tarea6.MediaNumerosTest.lambda$malFormadoTest$0(MediaNumerosTest.java:29)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+

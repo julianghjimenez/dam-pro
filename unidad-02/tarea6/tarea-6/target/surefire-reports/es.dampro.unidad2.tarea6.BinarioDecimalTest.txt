@@ -1,0 +1,140 @@
+-------------------------------------------------------------------------------
+Test set: es.dampro.unidad2.tarea6.BinarioDecimalTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 5, Errors: 7, Skipped: 0, Time elapsed: 0.084 s <<< FAILURE! -- in es.dampro.unidad2.tarea6.BinarioDecimalTest
+es.dampro.unidad2.tarea6.BinarioDecimalTest.nuloTest -- Time elapsed: 0.034 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.nuloTest(BinarioDecimalTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.lambda$nuloTest$0(BinarioDecimalTest.java:60)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.BinarioDecimalTest.digitoIncorrectoTest -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.digitoIncorrectoTest(BinarioDecimalTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.lambda$digitoIncorrectoTest$0(BinarioDecimalTest.java:66)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.BinarioDecimalTest.maxIntTest -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.maxIntTest(BinarioDecimalTest.java:48)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.BinarioDecimalTest.cerosInicialesTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.cerosInicialesTest(BinarioDecimalTest.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.BinarioDecimalTest.variosCerosTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.variosCerosTest(BinarioDecimalTest.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.BinarioDecimalTest.ceroTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.ceroTest(BinarioDecimalTest.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.BinarioDecimalTest.vacioTest -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.vacioTest(BinarioDecimalTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.lambda$vacioTest$0(BinarioDecimalTest.java:54)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.BinarioDecimalTest.espacioTest -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.espacioTest(BinarioDecimalTest.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.lambda$espacioTest$0(BinarioDecimalTest.java:72)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.BinarioDecimalTest.unoTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.unoTest(BinarioDecimalTest.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.BinarioDecimalTest.ochoTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.ochoTest(BinarioDecimalTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+es.dampro.unidad2.tarea6.BinarioDecimalTest.desbordamientoTest -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.desbordamientoTest(BinarioDecimalTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.lambda$desbordamientoTest$0(BinarioDecimalTest.java:78)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+es.dampro.unidad2.tarea6.BinarioDecimalTest.onceTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Método pendiente de implementar: convertirBinario
+	at es.dampro.unidad2.tarea6.BinarioDecimal.convertirBinario(BinarioDecimal.java:21)
+	at es.dampro.unidad2.tarea6.BinarioDecimalTest.onceTest(BinarioDecimalTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
