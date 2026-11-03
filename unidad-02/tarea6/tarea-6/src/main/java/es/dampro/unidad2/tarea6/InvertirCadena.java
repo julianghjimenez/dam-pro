@@ -1,4 +1,4 @@
-package src.main.java.es.dampro.unidad2.tarea6;
+package es.dampro.unidad2.tarea6;
 
 /**
  * @author julianghjimenez
@@ -17,16 +17,13 @@ public final class InvertirCadena {
      * @return Cadena invertida, conservando espacios y mayúsculas.
      */
     public static String invertir(String texto) {
-        StringBuilder resultado = new  StringBuilder();
-     if (texto == null || texto.isEmpty()) {
-       throw new IllegalArgumentException("Dato inválido");
-     }
-
-     for (int i = texto.length() - 1; i >= 0; i--) {
-        Character caracter = texto.charAt(i);
-        resultado.append(caracter);
-     }
-
+        if (texto == null) {
+            throw new IllegalArgumentException("El texto no puede ser nulo");
+        }
+        StringBuilder resultado = new StringBuilder(texto.length());
+        for (int i = texto.length() - 1; i >= 0; i--) {
+            resultado.append(texto.charAt(i));
+        }
         return resultado.toString();
     }
 }

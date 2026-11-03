@@ -1,8 +1,6 @@
-package src.main.java.es.dampro.unidad2.tarea6;
+package es.dampro.unidad2.tarea6;
 
-/**
- * TODO: documenta el propósito y la responsabilidad de la clase Factorial.
- */
+/** Calcula factoriales de enteros dentro del rango admitido por el ejercicio. */
 public final class Factorial {
 
     private Factorial() {
@@ -10,12 +8,23 @@ public final class Factorial {
     }
 
     /**
-     * TODO: explica el algoritmo y su comportamiento con datos límite.
-     * @param numero Dato de entrada que debe cumplir el contrato del enunciado.
-     * @return Factorial del número indicado.
+     * Funcion encargada de calcular el factorial
+     * @param numero String con el numero
+     * @return Integer con el factorial
      */
     public static int calcularFactorial(String numero) {
-        // TODO: implementa el algoritmo sin sustituirlo por una función que lo resuelva directamente.
-        throw new UnsupportedOperationException("Método pendiente de implementar: calcularFactorial");
+        if (numero == null || numero.isBlank()) {
+            throw new IllegalArgumentException("Se requiere un entero entre 0 y 12");
+        }
+        int valor = Integer.parseInt(numero.trim());
+        if (valor < 0 || valor > 12) {
+            throw new IllegalArgumentException("El número debe estar entre 0 y 12");
+        }
+
+        int factorial = 1;
+        for (int multiplicador = 2; multiplicador <= valor; multiplicador++) {
+            factorial *= multiplicador;
+        }
+        return factorial;
     }
 }

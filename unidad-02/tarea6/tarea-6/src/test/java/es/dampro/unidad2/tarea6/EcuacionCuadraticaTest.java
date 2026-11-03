@@ -1,7 +1,5 @@
-package src.test.java.es.dampro.unidad2.tarea6;
+package es.dampro.unidad2.tarea6;
 import org.junit.jupiter.api.Test;
-import src.main.java.es.dampro.unidad2.tarea6.EcuacionCuadratica;
-
 import static org.junit.jupiter.api.Assertions.*;
 /** Verifica los valores habituales, límites y excepciones del algoritmo. */
 class EcuacionCuadraticaTest {

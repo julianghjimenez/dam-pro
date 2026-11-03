@@ -3,7 +3,7 @@ package es.dampro.unidad2.tarea6;
 /**
  * @author julianghjimenez
  * @version 1.0.0
- * Busca el número mayor de una lista de números.
+ * MayorNumero
  */
 public final class MayorNumero {
 
@@ -21,13 +21,19 @@ public final class MayorNumero {
             throw new IllegalArgumentException();
         }
 
-        String[] numeros = sNumeros.split(",", -1);
-        int mayor = Integer.parseInt(numeros[0].trim());
-
-        for (int i = 1; i < numeros.length; i++) {
-            int numero = Integer.parseInt(numeros[i].trim());
-            if (numero > mayor) {
-                mayor = numero;
+        int mayor = 0;
+        int inicioNumero = 0;
+        for (int i = 0; i <= sNumeros.length(); i++) {
+            if (i == sNumeros.length() || sNumeros.charAt(i) == ',') {
+                String numeroTexto = sNumeros.substring(inicioNumero, i).trim();
+                if (numeroTexto.isEmpty()) {
+                    throw new IllegalArgumentException("La lista contiene un elemento vacío");
+                }
+                int numero = Integer.parseInt(numeroTexto);
+                if (inicioNumero == 0 || numero > mayor) {
+                    mayor = numero;
+                }
+                inicioNumero = i + 1;
             }
         }
 

@@ -1,4 +1,4 @@
-package src.main.java.es.dampro.unidad2.tarea6;
+package es.dampro.unidad2.tarea6;
 
 /**
  * @author julianghjimenez
@@ -13,24 +13,22 @@ public final class SumaDigitos {
 
     /**
      * Funcion que suma cada digito de una cadena
-     * 
      * @param numero String con la cadena de numeros a sumar
      * @return Integer con la suma de digitos.
      */
     public static int sumarDigitos(String numero) {
         if (numero == null || numero.isEmpty()) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Se requiere un entero positivo");
         }
 
         int resultado = 0;
         for (int i = 0; i < numero.length(); i++) {
-            Character caracter = numero.charAt(i);
-            int valor = Integer.parseInt(String.valueOf(caracter));
-            resultado += valor;
-
+            char caracter = numero.charAt(i);
+            if (caracter < '0' || caracter > '9') {
+                throw new IllegalArgumentException("La entrada debe contener solo dígitos");
+            }
+            resultado += caracter - '0';
         }
-       
-
         return resultado;
     }
 }

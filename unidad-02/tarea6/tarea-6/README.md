@@ -29,7 +29,15 @@
 
 ## Programa principal
 
-El alumnado debe crear un `main...` pedir datos de prueba  y mostrar los diez resultados con llamadas reales a los métodos. El formato de los valores numéricos es libre; para las etiquetas se utiliza el formato indicado. Cada ejemplo debe producir una línea no vacía.
+`Main` ejecuta los diez algoritmos con ejemplos y muestra una línea no vacía por resultado, usando las etiquetas y el orden indicados.
 
+## Cómo ejecutar
+
+Desde esta carpeta, compila y ejecuta el programa principal con:
+
+```text
+mvn package
+java -cp target/classes es.dampro.unidad2.tarea6.Main
+```
 
 **Calidad del código:** el profesorado revisará también el uso de nombres significativos, la legibilidad y la correcta estructuración. Un método que imprime el resultado en lugar de devolverlo no cumple su contrato. Los test son parte de la evaluación, no una solución del ejercicio.

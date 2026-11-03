@@ -1,17 +1,16 @@
-package src.main.java.es.dampro.unidad2.tarea6;
+package es.dampro.unidad2.tarea6;
 
 /**
  * @author julianghjimenez
  * @version 1.0.0
- *          ContadorVocales
+ * ContadorVocales
  */
 public final class ContadorVocales {
     private ContadorVocales() {
     }
 
     /**
-     * Funcion encargada de contar vocales en un texto
-     * 
+     * Funcion encargada de contar vocales en un texto 
      * @param iTexto String/texto a contar
      * @return Integer del numero de vocales.
      */

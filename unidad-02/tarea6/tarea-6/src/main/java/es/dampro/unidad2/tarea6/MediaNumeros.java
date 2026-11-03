@@ -1,6 +1,4 @@
-package src.main.java.es.dampro.unidad2.tarea6;
-
-import java.util.Scanner;
+package es.dampro.unidad2.tarea6;
 
 /**
  * @author julianghjimenez
@@ -10,38 +8,31 @@ import java.util.Scanner;
 public final class MediaNumeros {
     private MediaNumeros() { }
 
-    //Para la media necesitamos multiplicar las operaciones y dividir por el numero de operaciones
-    //numeros = 2,3,4,6 => 2+3+4+6 => 15/nª operaciones => 4 ===> 15/4
     /**
-     * Funcion que calcula la media de numeros
-     * @param numeros String de numeros a calcular
-     * @return Double del resultado suma
+     * Calcula la media de una lista de enteros separados por comas.
+     * @param numeros Lista de números que se va a promediar.
+     * @return La media aritmética sin redondear.
      */
     public static double calcularMedia(String numeros) {
-       if (numeros == null) {
-           throw new IllegalArgumentException();
-       }
-       if (numeros.isEmpty()) {
-           return 0.0;
-       }
-       int suma= 0;
-        for (int i = 0; i < numeros.length(); i++) {
-            char cNumero = numeros.charAt(i);
-            String sNumero = String.valueOf(cNumero);
-            int numero = Integer.parseInt(sNumero);
-            suma += numero;
+        if (numeros == null || numeros.isBlank()) {
+            throw new IllegalArgumentException("Se requiere una lista de números");
         }
-        int i;
-        i = suma / numeros.length();
-        return i;
-    }
 
-    static void main() {
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("iNTRODUCE UN NUMERO: ");
-        String sNumero = teclado.nextLine();
-        
-        double resultado = calcularMedia(sNumero);
-        System.out.println("resultado: "+resultado);
+        double suma = 0;
+        int cantidad = 0;
+        String numeroTexto = "";
+        for (int i = 0; i <= numeros.length(); i++) {
+            if (i == numeros.length() || numeros.charAt(i) == ',') {
+                if (numeroTexto.trim().isEmpty()) {
+                    throw new IllegalArgumentException("La lista contiene un elemento vacío");
+                }
+                suma += Integer.parseInt(numeroTexto.trim());
+                cantidad++;
+                numeroTexto = "";
+            } else {
+                numeroTexto += numeros.charAt(i);
+            }
+        }
+        return suma / cantidad;
     }
 }

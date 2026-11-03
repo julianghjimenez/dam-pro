@@ -1,45 +1,48 @@
-package src.main.java.es.dampro.unidad2.tarea6;
-
-import java.util.Scanner;
+package es.dampro.unidad2.tarea6;
 
 /**
- * @author Julianghjimenez
+ * @author julianghjimenez
  * @version 1.0.0
  * BinarioDecimal
  */
 public final class BinarioDecimal {
 
     private BinarioDecimal() {
-        // Clase de algoritmos estáticos.
     }
 
     /**
-     * TODO: explica el algoritmo y su comportamiento con datos límite.
-     * @param sBinario Dato de entrada que debe cumplir el contrato del enunciado.
-     * @return Número decimal correspondiente.
+     * Funcion encargada de convertir un numero binario a decimal
+     * @param binario String del numero binario
+     * @return Integer del numero decimal
      */
-    public static int convertirBinario(String sBinario) {
-       if (sBinario == null){
-           throw new IllegalArgumentException();
-       }
-       if (sBinario.isEmpty()){
-           return 0;
-       }
-       int resultado = 0;
-        for (int i = 0; i <= sBinario.length(); i++) {
-            int convertir = (int) Math.pow(2, i);
-            Character caracter = sBinario.charAt(i);
+    public static int convertirBinario(String binario) {
 
+        int resultado = 0;
+        int posicion = 0;
+
+        if (binario == null) {
+            throw new IllegalArgumentException();
         }
-       return resultado;
-    }
 
-    static void main() {
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Intoduce un binario: ");
-        String sBinario = teclado.nextLine();
+        if (binario.isEmpty()) {
+            throw new IllegalArgumentException();
+        }
 
-        int resultado = convertirBinario(sBinario);
-        System.out.println("resultado: "+resultado);
+        for (int i = binario.length() - 1; i >= 0; i--) {
+
+            String digito = String.valueOf(binario.charAt(i));
+
+            if (!digito.equals("0") && !digito.equals("1")) {
+                throw new IllegalArgumentException();
+            }
+
+            if (digito.equals("1")) {
+                resultado = resultado + (int) Math.pow(2, posicion);
+            }
+
+            posicion++;
+        }
+
+        return resultado;
     }
 }
