@@ -27,8 +27,10 @@ public final class Ejercicio06Invertir {
         // longitud del array == 3; pasa a la siguiente posicion
         for (int i = 0; i < numeros.length; i++) {
 
-            // copia.length == 3 || copia.length -1 == 2 --> largo - 1 - posicion actual
+            // copia.length == 3 || copia.length -1 == 2 --> largo - 1 - posicion actual [i]
            int posicion = copia.length-1-i;
+
+           //La [posicion] de copia es donde ira el valor de [i] dado por el array numeros
            copia[posicion] = numeros[i];
         }
         return copia;
