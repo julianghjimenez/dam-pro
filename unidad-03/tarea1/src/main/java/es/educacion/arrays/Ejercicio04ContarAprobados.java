@@ -1,14 +1,26 @@
 package es.educacion.arrays;
 
-// Cuenta las notas >= 5. Array vacío: 0. Null: IllegalArgumentException.
-// 
-// TODO: implementar el método y documentar la clase y el método mediante Javadoc.
+/**
+ * @author julianghjimenez
+ * @version 1.0.0
+ * Contar Aprovados
+ */
 public final class Ejercicio04ContarAprobados {
     private Ejercicio04ContarAprobados() { }
 
     // Cuenta las notas >= 5. Array vacío: 0. Null: IllegalArgumentException.
     public static int contarAprobados(int[] notas) {
-        throw new UnsupportedOperationException();
+        if (notas.length == 0) {
+            return 0;
+        }
+        int contador = 0;
+        for (int i = 0; i < notas.length; i++) {
+            if (notas[i] >= 5) {
+                contador++;
+            }
+            return contador;
+        }
+        return 0;
     }
 
     public static int contarSuspenso(int[] notas) {

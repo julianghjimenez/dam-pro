@@ -1,13 +1,26 @@
 package es.educacion.arrays;
 
-// Devuelve un array nuevo con los elementos en orden inverso. No modifica el original. Null: IllegalArgumentException.
-// 
-// TODO: implementar el método y documentar la clase y el método mediante Javadoc.
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/**
+ * @author julianghjimenez
+ * @version 1.0.0
+ * Invertir
+ */
 public final class Ejercicio06Invertir {
     private Ejercicio06Invertir() { }
 
     // Devuelve un array nuevo con los elementos en orden inverso. No modifica el original. Null: IllegalArgumentException.
     public static int[] invertir(int[] numeros) {
-        throw new UnsupportedOperationException("Pendiente de implementar");
+        if (numeros.length == 0 || numeros == null) {
+            throw new IllegalArgumentException();
+        }
+        int[] copia = Arrays.copyOf(numeros, numeros.length);
+        for (int i = 0; i < numeros.length; i--) {
+            int numero = numeros[i];
+
+        }
     }
 }

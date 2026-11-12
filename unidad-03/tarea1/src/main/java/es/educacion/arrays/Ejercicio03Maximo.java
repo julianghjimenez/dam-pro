@@ -1,13 +1,29 @@
 package es.educacion.arrays;
 
-// Devuelve el mayor valor. Vacío o null: IllegalArgumentException.
-// 
-// TODO: implementar el método y documentar la clase y el método mediante Javadoc.
+/**
+ * @author julianghjimenez
+ * @version 1.0.0
+ * Maximo
+ */
 public final class Ejercicio03Maximo {
     private Ejercicio03Maximo() { }
 
-    // Devuelve el mayor valor. Vacío o null: IllegalArgumentException.
+    /**
+     * Funcion encargada de obtener el maximo de una lista de numeros
+     * @param numeros lista de numeros
+     * @return Integer del numero mayor
+     */
     public static int maximo(int[] numeros) {
-        throw new UnsupportedOperationException("Pendiente de implementar");
+        if (numeros.length == 0) {
+            throw new IllegalArgumentException();
+        }
+        int maximo = numeros[0];
+
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] > maximo ){
+                maximo = numeros[i];
+            }
+        }
+        return maximo;
     }
 }

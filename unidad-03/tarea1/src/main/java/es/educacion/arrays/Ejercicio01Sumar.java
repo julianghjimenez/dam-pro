@@ -1,5 +1,10 @@
 package es.educacion.arrays;
 
+/**
+ * @author julianghjimenez
+ * @version 1.0.0
+ * Sumar
+ */
 public final class Ejercicio01Sumar {
     private Ejercicio01Sumar() { }
 

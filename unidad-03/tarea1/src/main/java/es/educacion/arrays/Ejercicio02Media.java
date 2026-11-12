@@ -1,5 +1,9 @@
 package es.educacion.arrays;
-
+/**
+ * @author julianghjimenez
+ * @version 1.0.0
+ * Media
+ */
 public final class Ejercicio02Media {
     private Ejercicio02Media() { }
 
