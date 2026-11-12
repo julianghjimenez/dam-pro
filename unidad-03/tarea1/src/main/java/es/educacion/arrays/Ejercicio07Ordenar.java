@@ -1,13 +1,26 @@
 package es.educacion.arrays;
 
-// Devuelve un array nuevo ordenado ascendentemente, sin modificar el original. Null: IllegalArgumentException.
-// 
-// TODO: implementar el método y documentar la clase y el método mediante Javadoc.
+import java.util.Arrays;
+
+/**
+ * @author julianghjimenez
+ * @version 1.0.0
+ * Ordenar
+ */
 public final class Ejercicio07Ordenar {
     private Ejercicio07Ordenar() { }
 
-    // Devuelve un array nuevo ordenado ascendentemente, sin modificar el original. Null: IllegalArgumentException.
+    /**
+     * Funcion encargada de ordenar de menor a mayor
+     * @param numeros Integer de una lista de numeros desordenados
+     * @return Integer con la lista ordenada
+     */
     public static int[] ordenar(int[] numeros) {
-        throw new UnsupportedOperationException("Pendiente de implementar");
+        if (numeros == null) {
+            throw new IllegalArgumentException();
+        }
+        int[] arrayOrdenado = Arrays.copyOf(numeros, numeros.length);
+       Arrays.sort(arrayOrdenado);
+       return arrayOrdenado;
     }
 }
