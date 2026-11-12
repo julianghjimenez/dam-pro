@@ -1,13 +1,34 @@
 package es.educacion.arrays;
 
-// Devuelve una copia desde inicio (incluido) hasta fin (excluido). Usa índices válidos con 0 <= inicio <= fin <= length. Intervalo inválido: IllegalArgumentException. Null: IllegalArgumentException.
-// 
-// TODO: implementar el método y documentar la clase y el método mediante Javadoc.
+import java.util.Arrays;
+
+/**
+ * @author julianghjimenez
+ * @version 1.0.0
+ * Copiar Rango
+ */
 public final class Ejercicio08CopiarRango {
     private Ejercicio08CopiarRango() { }
 
-    // Devuelve una copia desde inicio (incluido) hasta fin (excluido). Usa índices válidos con 0 <= inicio <= fin <= length. Intervalo inválido: IllegalArgumentException. Null: IllegalArgumentException.
+    /**
+     * Funcion encargada de copiar rangos en un Array
+     * @param numeros Array con la lista de rangos
+     * @param inicio Integer que inicia el rango
+     * @param fin Integer que finaliza el rango
+     * @return Rangos validos
+     */
     public static int[] copiarRango(int[] numeros, int inicio, int fin) {
-        throw new UnsupportedOperationException("Pendiente de implementar");
+     //0 ≤ inicio ≤ fin ≤ longitud
+
+        if (inicio > fin) {
+         return numeros;
+     }
+     if (inicio < 0 || fin < 0 || fin > numeros.length ) {
+         throw new IllegalArgumentException();
+     }
+
+     int[] copiarRango = Arrays.copyOfRange(numeros, inicio, fin);
+
+     return copiarRango;
     }
 }
