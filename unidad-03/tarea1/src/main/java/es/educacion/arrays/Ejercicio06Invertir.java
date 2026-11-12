@@ -12,15 +12,25 @@ import java.util.Arrays;
 public final class Ejercicio06Invertir {
     private Ejercicio06Invertir() { }
 
-    // Devuelve un array nuevo con los elementos en orden inverso. No modifica el original. Null: IllegalArgumentException.
+    /**
+     * Funcion encargada de invertir lista de numeros
+     * @param numeros Integer de la lista
+     * @return Integer de la lista invertida
+     */
     public static int[] invertir(int[] numeros) {
-        if (numeros.length == 0 || numeros == null) {
+        if (numeros == null) {
             throw new IllegalArgumentException();
         }
-        int[] copia = Arrays.copyOf(numeros, numeros.length);
-        for (int i = 0; i < numeros.length; i--) {
-            int numero = numeros[i];
+        int[] copia = new int[numeros.length];
 
+        // Empieza desde la posicion 0; acaba cuando i pase por un numero mayor a la
+        // longitud del array == 3; pasa a la siguiente posicion
+        for (int i = 0; i < numeros.length; i++) {
+
+            // copia.length == 3 || copia.length -1 == 2 --> largo - 1 - posicion actual
+           int posicion = copia.length-1-i;
+           copia[posicion] = numeros[i];
         }
+        return copia;
     }
 }
