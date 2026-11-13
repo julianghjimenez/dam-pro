@@ -8,7 +8,12 @@ package es.educacion.arrays;
 public final class Ejercicio10FusionarOrdenados {
     private Ejercicio10FusionarOrdenados() { }
 
-    // Fusiona dos arrays ya ordenados ascendentemente, conservando repetidos, en un array nuevo ordenado. Null: IllegalArgumentException.
+    /**
+     *
+     * @param primero
+     * @param segundo
+     * @return
+     */
     public static int[] fusionar(int[] primero, int[] segundo) {
         if (primero == null || segundo == null) {
             throw new IllegalArgumentException();
