@@ -1,13 +1,47 @@
 package es.educacion.arrays;
 
-// Fusiona dos arrays ya ordenados ascendentemente, conservando repetidos, en un array nuevo ordenado. Null: IllegalArgumentException.
-// 
-// TODO: implementar el método y documentar la clase y el método mediante Javadoc.
+/**
+ * @author julianghjimenez
+ * @version 1.0.0
+ * Fusionar Ordenados
+ */
 public final class Ejercicio10FusionarOrdenados {
     private Ejercicio10FusionarOrdenados() { }
 
     // Fusiona dos arrays ya ordenados ascendentemente, conservando repetidos, en un array nuevo ordenado. Null: IllegalArgumentException.
     public static int[] fusionar(int[] primero, int[] segundo) {
-        throw new UnsupportedOperationException("Pendiente de implementar");
+        if (primero == null || segundo == null) {
+            throw new IllegalArgumentException();
+        }
+        int[] resultado = new int[primero.length + segundo.length];
+      int posicion1 = 0;
+      int posicion2 = 0;
+      int posicion3 = 0;
+
+      while (posicion1 < primero.length && posicion2 < segundo.length) {
+          if (primero[posicion1] <= segundo[posicion2]) {
+              resultado[posicion3] = primero[posicion1];
+              posicion1++;
+              posicion3++;
+          } else {
+              resultado[posicion3] = segundo[posicion2];
+              posicion2++;
+              posicion3++;
+          }
+      }
+      while (posicion1 < primero.length) {
+          resultado[posicion3] = primero[posicion1];
+          posicion1++;
+          posicion3++;
+      }
+
+      while (posicion2 < segundo.length) {
+          resultado[posicion3] = segundo[posicion2];
+          posicion2++;
+          posicion3++;
+
+      }
+
+        return resultado;
     }
 }
