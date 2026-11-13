@@ -9,10 +9,10 @@ public final class Ejercicio10FusionarOrdenados {
     private Ejercicio10FusionarOrdenados() { }
 
     /**
-     *
-     * @param primero
-     * @param segundo
-     * @return
+     * Funcion encargada de Fusionar y ordenar Arrays
+     * @param primero Array numero 1
+     * @param segundo Array numero 2
+     * @return Array resultado
      */
     public static int[] fusionar(int[] primero, int[] segundo) {
         if (primero == null || segundo == null) {
