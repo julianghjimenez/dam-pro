@@ -1,5 +1,4 @@
 package es.educacion.arrays;
-
 import java.util.Arrays;
 
 /**
@@ -16,14 +15,17 @@ public final class Ejercicio12RotarDerecha {
      * @param posiciones INteger con las posiciones
      * @return Array reordenado a la derecha
      */
-    // Contrato: Devuelve una copia rotada a la derecha el número no negativo de posiciones. Vacío devuelve vacío. No modifica el original. Null o posiciones negativas: IllegalArgumentException.
     public static int[] rotar(int[] numeros, int posiciones) {
-        if (numeros == null) {
-            throw new IllegalArgumentException();
-        }
-        int[] copia = new int[numeros.length]; //nuevo array copiado con igual longitud
-        for (int i = 0; i < numeros.length; i++) {
-
+            if (numeros == null || posiciones < 0) {
+                throw new IllegalArgumentException();
+            }
+            if (numeros.length == 0) {
+                return new int[0];
+            }
+            int[] resultado = new int[numeros.length];
+            for (int i = 0; i < numeros.length; i++) {
+                resultado[(i + posiciones) % numeros.length] = numeros[i];
+            }
+            return resultado;
         }
     }
-}
