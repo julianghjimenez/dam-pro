@@ -9,9 +9,9 @@ public final class Ejercicio16SumaFilas {
     private Ejercicio16SumaFilas() { }
 
     /**
-     *
-     * @param matriz
-     * @return
+     * Funcion encargada de sumar el numero de filas en una matriz
+     * @param matriz Integer de un array en forma de matriz
+     * @return Integer con el numero de filas
      */
     public static int[] sumarFilas(int[][] matriz) {
         if (matriz == null) {
