@@ -8,7 +8,11 @@ package es.educacion.arrays;
 public final class Ejercicio17Diagonal {
     private Ejercicio17Diagonal() { }
 
-
+    /**
+     * Funcin encargada de sumar los numeros en la diagonal de una matriz
+     * @param matriz Integer de un array en forma de matriz
+     * @return Integer con el numero
+     */
     public static int sumarDiagonal(int[][] matriz) {
         if (matriz == null ) {
             throw new IllegalArgumentException();
